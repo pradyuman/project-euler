@@ -5,5 +5,15 @@
 #Find the product abc.
 
 #Solution
-#
+#31875000
 
+def isTriplet():
+    for i in range(100,750):
+        for j in range(200,750):
+            for k in range(300,750):
+                if i ** 2 + j **2 == k**2:
+                    if (i + j + k == 1000) & (i < j) & (j < k):
+                        print(i*j*k)
+                        return
+
+isTriplet()
