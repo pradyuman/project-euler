@@ -29,7 +29,6 @@ func main() {
 func increment(num int) int {
 	if num == 2 {
 		return 3
-	} else {
-		return num + 2
 	}
+	return num + 2
 }
