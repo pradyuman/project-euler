@@ -5,11 +5,4 @@
 #Solution
 #233168
 
-MAX_NUMBER = 1000
-sum = 0
-
-for i in range(1,MAX_NUMBER):
-	if not(i % 3) or not(i % 5):
-		sum+=i
-
-print(sum)
+print(sum(x for x in range(1000) if x % 3 == 0 or x % 5 == 0))
